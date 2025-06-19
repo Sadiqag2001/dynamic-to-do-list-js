@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
             taskItem.textContent = taskText;
             const removeBtn = document.createElement('button');
             removeBtn.textContent = 'Remove';
-            removeBtn.className = 'remove-btn';
+            removeBtn.classList.add('remove-btn');
+
             removeBtn.onclick = function() {
                 taskList.removeChild(taskItem);
             };
@@ -28,4 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 document.getElementById('add-task-btn').addEventListener('click', addTask);
+
 });
