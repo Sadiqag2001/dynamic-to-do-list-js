@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
             taskInput.value = '';
         }
     }
-    document.getElementById('task-input').addEventListener('keypress', function(event) {
+    taskInput.addEventListener('keypress', function(event) {
         if (event.key === 'Enter') {
             addTask();
         }
     });
-document.getElementById('add-task-btn').addEventListener('click', addTask);
+    addButton.addEventListener('click', addTask);
 
 });
